@@ -39,12 +39,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    /* article share mobile toggle
-    --------------------------------------------- */
 
-    $('.single .content-area article .article-meta .post-share .post-share-title ').on('click', function () {
-        $('.single.single-post .content-area .site-main > article .article-meta .post-share .social-networks').slideToggle();
-    });
     /* secondary Navigation
     --------------------------------------------- */
 
@@ -62,10 +57,10 @@ jQuery(document).ready(function ($) {
 
     });
 
-
-
-
-
+    // AOS animation
+    AOS.init({
+        // once: true,
+    });
 
 });
 
