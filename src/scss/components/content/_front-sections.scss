@@ -466,13 +466,19 @@
     }
 
 
+    .beneficiaries-wrapper {}
 
     .beneficiaries-grid {
         margin-top: 17px;
         display: flex;
+        flex-flow: row nowrap;
         grid-gap: 16px;
         overflow-x: auto;
         scrollbar-width: none;
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+        -webkit-overflow-scrolling: touch;
+        width: calc(100% + 60px);
 
         &::-webkit-scrollbar {
             display: none;
@@ -483,13 +489,8 @@
             margin-top: 60px;
         }
 
-        @include respond-to(xlarge) {
-            width: calc(100% + 60px);
-        }
-
 
         &__item {
-            max-width: 255px;
             min-width: 255px;
 
             .post-thumbnail {

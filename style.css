@@ -1911,7 +1911,7 @@ textarea::placeholder {
   }
 }
 .site-header .mobile-header > .container {
-  padding: 35px 32px 35px 16px;
+  padding: 35px 32px 35px 32px;
   margin-left: 16px;
   background-color: var(--white-color);
 }
@@ -2182,7 +2182,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 40px;
+  padding: 0 16px 40px;
 }
 @media screen and (min-width: 768px) {
   .site-banner .banner-wrapper .banner-caption-wrapper {
@@ -2200,6 +2200,7 @@ textarea::placeholder {
   display: flex;
   justify-content: flex-end;
   margin-right: -15px;
+  padding-left: 16px;
 }
 @media screen and (min-width: 1200px) {
   .site-banner .banner-wrapper .feature-image {
@@ -2641,9 +2642,14 @@ textarea::placeholder {
 .beneficiaries .beneficiaries-grid {
   margin-top: 17px;
   display: flex;
+  flex-flow: row nowrap;
   grid-gap: 16px;
   overflow-x: auto;
   scrollbar-width: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  -webkit-overflow-scrolling: touch;
+  width: calc(100% + 60px);
 }
 .beneficiaries .beneficiaries-grid::-webkit-scrollbar {
   display: none;
@@ -2654,13 +2660,7 @@ textarea::placeholder {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .beneficiaries .beneficiaries-grid {
-    width: calc(100% + 60px);
-  }
-}
 .beneficiaries .beneficiaries-grid__item {
-  max-width: 255px;
   min-width: 255px;
 }
 .beneficiaries .beneficiaries-grid__item .post-thumbnail {
