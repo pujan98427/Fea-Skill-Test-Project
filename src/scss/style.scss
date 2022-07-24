@@ -46,9 +46,6 @@
 // importing grid layout
 @import "./layouts/grid";
 
-//import videolayout
-
-@import "./layouts/video-layouts";
 
 /* --------------------------------------------------------------
 # Components
@@ -62,26 +59,10 @@
 //footer
 @import "layouts/footer";
 
-//layout
-@import "layouts/blog";
-
-@import "layouts/layout";
-
-//layout
-@import "layouts/article-share";
-
 
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-// animations
-@import "utilities/animations";
-
-// accessiblity
-@import "utilities/accessibility";
-
-// alignment
-@import "utilities/alignments";
 
 // social icon
 @import "utilities/social-icons";

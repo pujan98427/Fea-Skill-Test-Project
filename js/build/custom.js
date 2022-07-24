@@ -38,7 +38,6 @@ jQuery(document).ready(function ($) {
 
     slider.addEventListener('mousedown', (e) => {
         isDown = true;
-        slider.classList.add('active');
         startX = e.pageX - slider.offsetLeft;
         scrollLeft = slider.scrollLeft;
     });
