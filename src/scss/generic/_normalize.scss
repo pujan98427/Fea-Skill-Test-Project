@@ -448,7 +448,6 @@ h6 {
 .post-navigation .nav-links {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -457,7 +456,6 @@ h6 {
 .post-navigation .nav-previous {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 0 50%;
-	    -ms-flex: 1 0 50%;
 	        flex: 1 0 50%;
 }
 
@@ -467,7 +465,6 @@ h6 {
 	text-align: end;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 0 50%;
-	    -ms-flex: 1 0 50%;
 	        flex: 1 0 50%;
 }
 

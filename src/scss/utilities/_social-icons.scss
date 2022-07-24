@@ -1,7 +1,11 @@
 .social-icon {
     list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
     margin-bottom: 0;
 
     li {
@@ -13,9 +17,13 @@
 
             svg {
                 fill: var(--black-fade-color);
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
 
                 path {
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     transition: all 0.3s ease-in-out;
                 }
             }

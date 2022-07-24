@@ -4,6 +4,7 @@
     &::before {
         content: '';
         position: absolute;
+        top: -webkit-calc(100% - 30%);
         top: calc(100% - 30%);
         left: 0;
         background: var(--background-color);
@@ -11,11 +12,13 @@
         height: 30%;
 
         @include respond-to(medium) {
+            top: -webkit-calc(100% - 200px);
             top: calc(100% - 200px);
             height: 200px;
         }
 
         @include respond-to(large) {
+            top: -webkit-calc(100% - 279px);
             top: calc(100% - 279px);
             height: 279px;
         }
@@ -76,15 +79,29 @@
 
 
         .banner-caption-wrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+                    align-items: flex-start;
             padding: 0 16px 40px;
 
             @include respond-to(medium) {
-                flex-direction: row;
-                align-items: flex-end;
-                justify-content: space-between;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                        flex-direction: row;
+                -webkit-box-align: end;
+                -webkit-align-items: flex-end;
+                        align-items: flex-end;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                        justify-content: space-between;
             }
 
             @include respond-to(xlarge) {
@@ -93,8 +110,12 @@
         }
 
         .feature-image {
+            display: -webkit-box;
+            display: -webkit-flex;
             display: flex;
-            justify-content: flex-end;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                    justify-content: flex-end;
             margin-right: -15px;
             padding-left: 16px;
 
