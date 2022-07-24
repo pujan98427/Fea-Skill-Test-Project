@@ -1,0 +1,47 @@
+.back-to-top {
+    background: var(--primary-color);
+    border-radius: 100%;
+    border: 0;
+    position: fixed;
+    bottom: 0%;
+    right: 50px;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    min-height: auto;
+    line-height: 1;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition: all 0.234s ease-in-out;
+    -o-transition: all 0.234s ease-in-out;
+    transition: all 0.234s ease-in-out;
+
+    svg {
+        display: inline-block;
+        stroke: var(--white-color);
+    }
+
+    &:hover {
+        background: var(--font-color);
+    }
+
+    &.active {
+        bottom: 3%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        visibility: visible;
+    }
+
+    @media screen and (min-width: 767px) {
+        width: 45px;
+        height: 45px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+            font-size: 22px;
+        }
+    }
+}

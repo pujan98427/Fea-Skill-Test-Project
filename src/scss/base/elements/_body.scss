@@ -1,0 +1,33 @@
+.site {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: var(--background-color);
+}
+
+body {
+  background: var(--white-color);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--font-color);
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body.post,
+body.page {
+  margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,63 @@
+/*   ==================================================
+              BreadCrumbs
+    ================================================== */
+
+.breadcrumb-wrapper {
+    padding-top: 20px;
+    >div {
+        font-size: 0.77777777777777777777777777777778em;
+        padding: 5px 13px 5px 0;
+
+        a {
+            text-decoration: none;
+            letter-spacing: 0.36px;
+            color: #A8A8A8;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+
+        >span {
+            color: #A8A8A8;
+            &:last-child {
+                color: #A8A8A8;
+
+                a {
+                    color: inherit;
+                    pointer-events: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        >span+span {
+            margin-left: 10px;
+            padding-left: 10px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 1px;
+                height: 12.5px;
+                -webkit-transform: rotate(25deg);
+                    -ms-transform: rotate(25deg);
+                     -o-transform: rotate(25deg);
+                        transform: rotate(25deg);
+                border-right: 1px solid currentColor;
+                position: absolute;
+                top: 2px;
+                left: -1px;
+                
+
+            }
+        }
+    }
+}
+
+/*   ==================================================
+              BreadCrumbs
+    ================================================== */

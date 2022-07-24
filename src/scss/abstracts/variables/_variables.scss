@@ -1,0 +1,62 @@
+//convert hex to rgb
+@function toRGB($color) {
+    @return "#{red($color)},#{green($color)},#{blue($color)}";
+}
+
+// colors
+$primary-color : #003A92;
+$primary-color-rgb : toRGB($primary-color);
+$font-color : #3C3C3C;
+$font-color-rgb : toRGB($font-color);
+$light-fade-color : #74788A;
+$light-fade-rgb : toRGB($light-fade-color);
+$background-color : #F2EFEE;
+$background-color-rgb : toRGB($background-color);
+$black-color : #000;
+$black-color-rgb : toRGB($black-color);
+$white-color : #ffffff;
+$white-color-rgb : toRGB($white-color);
+
+
+
+
+// fonts
+$primary-font : 'Inter',
+sans-serif;
+$secondary-font : 'GalaxieCopernicus';
+
+
+
+$theme-colors: (
+);
+
+$theme-colors: map-merge(( //color
+            'primary-color' : $primary-color,
+            'primary-color-rgb' : $primary-color-rgb,
+            'font-color' : $font-color,
+            'font-color-rgb' : $font-color-rgb,
+            'black-fade-color' : $light-fade-color,
+            'black-fade-color-rgb' : $light-fade-rgb,
+            'background-color' : $background-color,
+            'background-color-rgb' : $background-color-rgb,
+            'white-color' : $white-color,
+            'white-color-rgb' : $white-color-rgb,
+            'black-color' : $black-color,
+            'black-color-rgb' : $black-color-rgb,
+
+            //fonts
+            'primary-font' : $primary-font,
+            'secondary-font' : $secondary-font,
+
+        ),
+        $theme-colors);
+
+// generate color in root
+:root {
+
+    @each $color,
+    $value in $theme-colors {
+        --#{$color}: #{$value};
+    }
+
+}

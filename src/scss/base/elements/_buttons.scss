@@ -1,0 +1,225 @@
+input[type=submit] {
+    border-radius: 0;
+    border: none;
+    font-size: 1em;
+    line-height: 1;
+    letter-spacing: 0.36px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    padding: 14px 19px;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+    white-space: nowrap;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+
+    &:hover {
+        background: transparent;
+        color: var(--primary-color);
+    }
+
+}
+
+.site .primary-btn {
+    border-radius: 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 30px;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    letter-spacing: 0.1em;
+
+    @include respond-to(medium) {
+        font-size: 1.2em;
+        padding: 16px 30px;
+        width: unset;
+        white-space: nowrap;
+    }
+
+    &:hover {
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+.site .secondary-btn {
+    border-radius: 0;
+    font-size: 1em;
+    line-height: 1.3;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-color);
+    background: transparent;
+    border: 1px solid #C4C4C4;
+
+    .text {
+        display: inline-block;
+        padding: 23px 29px 23px 24px;
+        white-space: nowrap;
+
+        @include respond-to(medium) {
+            svg {
+                padding: 23px 29px 23px 24px;
+            }
+        }
+    }
+
+    .icon {
+        border-left: 1px solid #C4C4C4;
+        transition: all .35s ease;
+        padding: 27px 22px;
+
+        svg {
+            path {
+                fill: var(--font-color);
+                transition: all .35s ease;
+            }
+        }
+    }
+
+    &:hover {
+        color: var(--white-color);
+        border-color: var(--primary-color);
+        background: var(--primary-color);
+
+
+        .icon {
+            svg {
+                path {
+                    fill: var(--white-color);
+                }
+            }
+        }
+
+    }
+
+}
+
+// toggle button
+.toggle-btn {
+    width: 22.64px;
+    height: 16.79px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .125s ease;
+    -o-transition: all .125s ease;
+    transition: all .125s ease;
+
+    .toggle-bar {
+        width: 27px;
+        height: 1px;
+        background: #000000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+        -webkit-transition: all .125s ease;
+        -o-transition: all .125s ease;
+        transition: all .125s ease;
+        opacity: 0.7;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &:hover {
+        .toggle-bar {
+            opacity: 1;
+            background: var(--primary-color);
+        }
+
+    }
+}
+
+.submenu-toggle-btn {
+    all: unset;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--primary-color);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    height: 15px;
+    line-height: 1;
+    background: none !important;
+
+    &.active {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        pointer-events: none;
+    }
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #001A1A;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        &::before,
+        &::after {
+            background: var(--font-color);
+        }
+    }
+}

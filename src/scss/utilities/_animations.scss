@@ -1,0 +1,128 @@
+@-webkit-keyframes slideDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-o-keyframes slideDown{
+    from{
+        opacity: 0;
+        -o-transform: translateY(-100%);
+           transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        -o-transform: translateY(0);
+           transform: translateY(0);
+    }
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+             -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes likeAnimate{
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    10%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    90%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+
+@-o-keyframes likeAnimate{
+    0%{
+        -o-transform: scale(0);
+           transform: scale(0);
+    }
+    10%{
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+    90%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+
+@keyframes likeAnimate{
+    0%{
+        -webkit-transform: scale(0);
+             -o-transform: scale(0);
+                transform: scale(0);
+    }
+    10%{
+        -webkit-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    90%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+
+@-webkit-keyframes loveAnimate{
+    0%{
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}
+
+@-o-keyframes loveAnimate{
+    0%{
+        -o-transform: rotate(-90deg);
+           transform: rotate(-90deg);
+    }
+    100%{
+        -o-transform: rotate(90deg);
+           transform: rotate(90deg);
+    }
+}
+
+@keyframes loveAnimate{
+    0%{
+        -webkit-transform: rotate(-90deg);
+             -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}

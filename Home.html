@@ -1,0 +1,581 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/build/owl.carousel.css"> -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>FSE Skill Test Project</title>
+</head>
+
+<body>
+    <div id="page" class="site">
+
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-wrapper">
+                    <ul class="social-icon">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.38744 4.25625L9.42934 4.9483L8.73087 4.86356C6.18844 4.53872 3.96731 3.4371 2.08144 1.58693L1.15946 0.668915L0.92198 1.34684C0.419082 2.85804 0.740378 4.45398 1.78808 5.52735C2.34686 6.12054 2.22113 6.20528 1.25725 5.85219C0.92198 5.7392 0.628623 5.65446 0.600684 5.69683C0.502898 5.7957 0.838164 7.08092 1.10358 7.58937C1.46679 8.29553 2.20717 8.98758 3.01739 9.39716L3.70189 9.72199L2.89167 9.73612C2.10938 9.73612 2.08144 9.75024 2.16526 10.0468C2.44464 10.9649 3.54823 11.9394 4.77753 12.3631L5.64364 12.6597L4.88929 13.1116C3.77174 13.7613 2.45861 14.1285 1.14549 14.1567C0.516868 14.1709 0 14.2273 0 14.2697C0 14.411 1.70427 15.2019 2.69609 15.5126C5.67158 16.4306 9.20583 16.0351 11.86 14.4674C13.7459 13.3517 15.6318 11.1343 16.5118 8.98758C16.9868 7.84359 17.4617 5.75333 17.4617 4.75057C17.4617 4.10089 17.5037 4.01615 18.2859 3.23937C18.7469 2.78742 19.18 2.2931 19.2638 2.15187C19.4035 1.88352 19.3895 1.88352 18.6771 2.12362C17.4897 2.54732 17.3221 2.49083 17.9088 1.85528C18.3418 1.40333 18.8587 0.584174 18.8587 0.344077C18.8587 0.301707 18.6491 0.372324 18.4117 0.499434C18.1602 0.640668 17.6014 0.852518 17.1824 0.979629L16.428 1.21973L15.7435 0.753655C15.3663 0.499434 14.8355 0.216967 14.5561 0.132227C13.8437 -0.0655006 12.7541 -0.0372539 12.1115 0.18872C10.3653 0.824272 9.26171 2.46258 9.38744 4.25625Z"
+                                        fill="#74788A" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.6399 9.80982C16.6399 6.49387 14.8803 4.95057 12.5332 4.95057C10.6395 4.95057 9.79171 5.9984 9.31832 6.73347V5.20436H5.75118C5.79819 6.21736 5.75118 16 5.75118 16H9.31832V9.97082C9.31832 9.64818 9.34147 9.32632 9.43578 9.09531C9.69356 8.45074 10.2805 7.78338 11.2659 7.78338C12.557 7.78338 13.0732 8.77331 13.0732 10.224V15.9997H16.6397L16.6399 9.80982Z"
+                                        fill="#74788A" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.7764 5.20431H0.209685V16H3.7764V5.20431Z" fill="#74788A" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.01253 1.86473C3.98939 0.806221 3.23799 0 2.01784 0C0.797692 0 0 0.806221 0 1.86473C0 2.90131 0.774115 3.73074 1.97154 3.73074H1.99434C3.23799 3.73074 4.01253 2.90131 4.01253 1.86473Z"
+                                        fill="#74788A" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                    </ul><!-- ul social-icon -->
+                </div><!-- top-header-wrapper -->
+            </div><!-- container -->
+        </div><!-- top-header -->
+
+        <header class="site-header style-one">
+            <div class="container">
+                <div class="header-main">
+                    <div class="site-branding">
+                        <div class="site-logo">
+                            <a href="#"><img src="./images/fse_logo.png" alt=""></a>
+                        </div>
+                    </div><!-- site-branding -->
+                    <nav id="site-navigatio" class="main-navigation">
+                        <button class="close-btn"></button>
+                        <div class="menu-primary-container">
+                            <ul id="primary-menu" class="nav-menu">
+                                <li class="menu-item current-menu-item">
+                                    <a href="#">Founders</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Beneficiaries</a>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="#">Scholarships</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Press</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><!-- nav.main-navigation -->
+
+                </div>
+
+            </div>
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="mob-nav-site-branding-wrap">
+
+                        <div class="site-branding">
+                            <div class="site-logo">
+                                <a href="#"><img src="./images/fse_logo.png" alt=""></a>
+                            </div>
+                        </div><!-- site-branding -->
+                        <div class="toggle-btn-wrap">
+                            <button class="toggle-btn">
+                                <span class="toggle-bar"></span>
+                                <span class="toggle-bar"></span>
+                                <span class="toggle-bar"></span>
+                            </button>
+                        </div><!-- toggle-btn-wrap -->
+
+                    </div>
+                </div>
+                <div class="header-bottom-slide">
+                    <div class="header-bottom-slide-inner">
+                        <div class="container">
+                            <div class="mobile-header-wrapper">
+                                <div class="mobile-header-wrap">
+                                    <div class="site-branding">
+                                        <div class="site-logo">
+                                            <a href="#"><img src="./images/fea_logo_white.png" alt=""></a>
+                                        </div>
+                                    </div><!-- site-branding -->
+                                    <button class="close-btn"></button>
+                                </div>
+
+                                <div class="header-top">
+                                    <nav id="site-navigatio" class="main-navigation">
+                                        <div class="menu-primary-container">
+                                            <ul id="primary-menu" class="nav-menu">
+                                                <li class="menu-item current-menu-item menu-item-has-children">
+                                                    <a href="#">Founders</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="#">Maria Kenter</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="#">Roger Septimus</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="#">Beneficiaries</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="#">Scholarships</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="#">Sed ut tincidunt euismod malesuada</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="#">Nunc, sit in varius pulvinar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Press</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Blog</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav><!-- nav.main-navigation -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- site-header -->
+
+        <section id="banner_section" class="site-banner">
+            <div class="container">
+                <div class="banner-wrapper">
+                    <div class="banner-caption">
+                        <div class="banner-caption-wrapper">
+                            <h1 class="banner-title">
+                                <a href="">Ullamcorper diam turpis egestas egestas fames enim risus sed proin</a>
+                            </h1><!-- banner-title -->
+                            <div class="banner-button">
+                                <a href="" class="secondary-btn"> <span class="text">Read more</span>
+                                    <span class="icon">
+                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.14545 8L0 1.77778L1.75584 0L8.77921 7.11111C9.26407 7.60203 9.26407 8.39797 8.77921 8.88889L1.75584 16L0 14.2222L6.14545 8Z"
+                                                fill="#3C3C3C" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div><!-- banner-button -->
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="./images/banner-image.png" alt="" srcset="">
+                    </div><!-- feature-image -->
+
+                </div>
+            </div>
+        </section> <!-- site-banner -->
+
+        <section class="latest-news">
+            <div class="container">
+                <h2 class='section-title'>latest news</h2>
+                <div class="ln-grid">
+                    <div class="ln-grid-item">
+                        <div class="ln-grid-item-wrapper">
+                            <div class="ln-grid-item-wrapper__inner-grid-item">
+                                <h2 class='section-title'>latest news</h2>
+                            </div><!-- ln-grid-item-wrapper__inner-grid-item -->
+                            <div class="ln-grid-item-wrapper__inner-grid-item">
+                                <div class="post-thumnail">
+                                    <img src="./images/ln-img-1.png" alt="">
+                                </div>
+                                <div class="ln-post-detail">
+                                    <span class="posted-on">
+                                        <a href="">november 19 <span>2020</span> </a>
+                                    </span>
+                                    <h3 class="post-title">
+                                        <a href="javascript:voit(0);">Molestie molesti metus, tempus in commodo, semper
+                                            tellus</a>
+                                    </h3>
+                                </div>
+                            </div><!-- ln-grid-item-wrapper__inner-grid-item -->
+                            <div class="ln-grid-item-wrapper__inner-grid-item">
+                                <a class='tertiary-btn'>See all news</a>
+                            </div><!-- ln-grid-item-wrapper__inner-grid-item -->
+                        </div><!-- ln-grid-item-wrapper -->
+                    </div><!-- ln-grid-item -->
+
+                    <div class="ln-grid-item">
+                        <div class="ln-grid-item-wrapper">
+                            <div class="ln-grid-item-wrapper__inner-grid-item">
+                                <div class="post-thumnail">
+                                    <img src="./images/ln-img-2.png" alt="">
+                                </div>
+                                <div class="ln-post-detail">
+                                    <span class="posted-on">
+                                        <a href="">november 19 <span>2020</span> </a>
+                                    </span>
+                                    <h3 class="post-title">
+                                        <a href="javascript:voit(0);">Molestie molesti metus, tempus in commodo, semper
+                                            tellus</a>
+
+                                    </h3>
+                                </div>
+                            </div><!-- ln-grid-item-wrapper__inner-grid-item -->
+                            <div class="ln-grid-item-wrapper__inner-grid-item">
+                                <div class="ln-grid-item-wrapper__inner-grid-item__small-grid">
+                                    <div class="ln-grid-item-wrapper__inner-grid-item__small-grid__item">
+                                        <div class="post-thumnail">
+                                            <img src="./images/ln-img-3.png" alt="">
+                                        </div>
+                                        <div class="ln-post-detail">
+                                            <span class="posted-on">
+                                                <a href="">november 19 <span>2020</span> </a>
+                                            </span>
+                                            <h3 class="post-title">
+                                                <a href="javascript:voit(0);">In faucibus suspendisse magna massa nibh
+                                                    elementum augue phasellus
+                                                    tristique
+                                                    senectus urna</a>
+
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="ln-grid-item-wrapper__inner-grid-item__small-grid__item">
+                                        <div class="post-thumnail">
+                                            <img src="./images/ln-img-4.jpg" alt="">
+                                        </div>
+                                        <div class="ln-post-detail">
+                                            <span class="posted-on">
+                                                <a href="">november 19 <span>2020</span> </a>
+                                            </span>
+                                            <h3 class="post-title">
+                                                <a href="javascript:voit(0);">Feugiat mollis quam sollicitudin egestas
+                                                    adipiscing amet</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><!-- ln-grid-item-wrapper -->
+                    </div><!-- ln-grid-item -->
+                </div>
+                <a class='tertiary-btn'>See all news</a>
+            </div>
+        </section><!-- latest-news -->
+
+        <section class="our-mission">
+            <div class="container">
+                <div class="mission-wrapper">
+                    <div class="mission-caption">
+                        <div class="mission-caption-wrapper">
+                            <span class="mission-subtitle">our mission</span>
+                            <h2 class="mission-title">
+                                Imperdiet quis leo scelerisque nunc magna mattis vitae non non
+                            </h2><!-- mission-title -->
+                            <p class="mission-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation.</p>
+
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="./images/mission-image.png" alt="" srcset="">
+                    </div><!-- feature-image -->
+
+                </div>
+            </div>
+        </section> <!-- site-mission -->
+
+        <section class="beneficiaries">
+            <div class="container">
+                <h2 class="section-title">
+                    beneficiaries
+                </h2><!-- section-title -->
+                <div class="beneficiaries-grid owl-carousel">
+                    <div class="beneficiaries-grid__item">
+                        <div class="post-thumbnail">
+                            <img src="./images/b-img-1.png" alt="">
+                        </div>
+                        <h3 class="post-title"> <a href="javascript:void(0)"> Morbi magna turpis dolor
+                                adipiscing</a>
+                        </h3>
+                    </div><!-- beneficiaries-grid__item -->
+                    <div class="beneficiaries-grid__item">
+                        <div class="post-thumbnail">
+                            <img src="./images/b-img-2.png" alt="">
+                        </div>
+                        <h3 class="post-title"><a href="javascript:void(0)">Curabitur cursus bibendum mauris
+                                placerat</a></h3>
+                    </div><!-- beneficiaries-grid__item -->
+                    <div class="beneficiaries-grid__item">
+                        <div class="post-thumbnail">
+                            <img src="./images/b-img-3.png" alt="">
+                        </div>
+                        <h3 class="post-title"><a href="javascript:void(0)">Sagittis quam nunc platea est</a></h3>
+                    </div><!-- beneficiaries-grid__item -->
+                    <div class="beneficiaries-grid__item">
+                        <div class="post-thumbnail">
+                            <img src="./images/b-img-4.png" alt="">
+                        </div>
+                        <h3 class="post-title"><a href="javascript:void(0)">Nisi, sed dui, ac enim</a></h3>
+                    </div><!-- beneficiaries-grid__item -->
+                    <div class="beneficiaries-grid__item">
+                        <div class="post-thumbnail">
+                            <img src="./images/b-img-5.png" alt="">
+                        </div>
+                        <h3 class="post-title"><a href="javascript:void(0)">Vitae sodales sit id ullamcorper</a>
+                        </h3>
+                    </div><!-- beneficiaries-grid__item -->
+                </div><!-- beneficiaries-grid -->
+            </div>
+        </section><!-- beneficiaries -->
+
+        <section class="the-founder">
+            <div class="founder-wrapper">
+                <div class="founder-caption">
+                    <div class="container">
+                        <div class="founder-caption-wrapper">
+                            <h2 class="founder-title">
+                                the founders
+                            </h2><!-- founder-title -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class=" feature-image desktop">
+                        <img src="./images/founder-image.png" alt="" srcset="">
+                        <div class="figure-caption">
+                            <h3>Maria Kenter</h3>
+                            <p>Roger Septimus</p>
+                        </div>
+                    </div>
+                    <div class=" feature-image mobile first-img">
+                        <img src="./images/founder-image.png" alt="" srcset="">
+                        <div class="figure-caption">
+                            <h3>Maria Kenter <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.91636 8L4 3.02222L5.40467 1.6L11.0234 7.28889C11.4113 7.68162 11.4113 8.31837 11.0234 8.71111L5.40467 14.4L4 12.9778L8.91636 8Z"
+                                        fill="white" />
+                                </svg>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class=" feature-image mobile">
+                        <img src="./images/founder-2.png" alt="" srcset="">
+                        <div class="figure-caption">
+                            <h3>Roger Septimus <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.91636 8L4 3.02222L5.40467 1.6L11.0234 7.28889C11.4113 7.68162 11.4113 8.31837 11.0234 8.71111L5.40467 14.4L4 12.9778L8.91636 8Z"
+                                        fill="white" />
+                                </svg>
+                            </h3>
+
+                        </div>
+                    </div>
+                </div><!-- feature-image -->
+
+            </div>
+
+        </section> <!-- site-founder -->
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class='section-title'>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-grid-item">
+                        <h2 class='section-title'>Gallery</h2>
+                        <div class="gallery-grid-item-wrapper">
+
+                            <div class="post-thumnail">
+                                <img src="./images/gallery-img-1.png" alt="">
+                            </div>
+                            <h3 class="gallery-item-caption">
+                                <a href="javascript:voit(0);">Molestie molesti metus, tempus in commodo, semper
+                                    tellus</a>
+                            </h3>
+
+                        </div><!-- gallery-grid-item-wrapper -->
+                    </div><!--  gallery-grid-item  -->
+                    <div class="gallery-grid-item">
+                        <div class="gallery-grid-item-wrapper">
+                            <div class="post-thumnail">
+                                <img src="./images/gallery-img-2.png" alt="">
+                            </div>
+
+                            <h3 class="gallery-item-caption">
+                                <a href="javascript:voit(0);">Molestie molesti metus, tempus in commodo, semper
+                                    tellus</a>
+                            </h3>
+                        </div><!-- gallery-grid-item-wrapper -->
+                    </div><!-- gallery-grid-item  -->
+                    <div class="gallery-grid-item">
+                        <div class="gallery-grid-item-wrapper">
+
+                            <div class="post-thumnail">
+                                <img src="./images/gallery-img-3.png" alt="">
+                            </div>
+                            <h3 class="gallery-item-caption">
+                                <a href="javascript:voit(0);">Molestie molesti metus, tempus in commodo, semper
+                                    tellus</a>
+                            </h3>
+
+                        </div><!-- gallery-grid-item-wrapper -->
+                    </div><!-- gallery-grid-item -->
+
+                </div>
+            </div>
+        </section><!-- gallery-news -->
+
+        <footer class="site-footer">
+            <div class="site-footer-wrapper">
+                <div class="container">
+                    <div class="footer-t">
+                        <div class="footer-top-wrapper">
+                            <div class="company-name">
+                                <img src="./images/logo-white.png" alt="">
+                            </div>
+                            <ul class="social-icon mobile">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.38744 4.25625L9.42934 4.9483L8.73087 4.86356C6.18844 4.53872 3.96731 3.4371 2.08144 1.58693L1.15946 0.668915L0.92198 1.34684C0.419082 2.85804 0.740378 4.45398 1.78808 5.52735C2.34686 6.12054 2.22113 6.20528 1.25725 5.85219C0.92198 5.7392 0.628623 5.65446 0.600684 5.69683C0.502898 5.7957 0.838164 7.08092 1.10358 7.58937C1.46679 8.29553 2.20717 8.98758 3.01739 9.39716L3.70189 9.72199L2.89167 9.73612C2.10938 9.73612 2.08144 9.75024 2.16526 10.0468C2.44464 10.9649 3.54823 11.9394 4.77753 12.3631L5.64364 12.6597L4.88929 13.1116C3.77174 13.7613 2.45861 14.1285 1.14549 14.1567C0.516868 14.1709 0 14.2273 0 14.2697C0 14.411 1.70427 15.2019 2.69609 15.5126C5.67158 16.4306 9.20583 16.0351 11.86 14.4674C13.7459 13.3517 15.6318 11.1343 16.5118 8.98758C16.9868 7.84359 17.4617 5.75333 17.4617 4.75057C17.4617 4.10089 17.5037 4.01615 18.2859 3.23937C18.7469 2.78742 19.18 2.2931 19.2638 2.15187C19.4035 1.88352 19.3895 1.88352 18.6771 2.12362C17.4897 2.54732 17.3221 2.49083 17.9088 1.85528C18.3418 1.40333 18.8587 0.584174 18.8587 0.344077C18.8587 0.301707 18.6491 0.372324 18.4117 0.499434C18.1602 0.640668 17.6014 0.852518 17.1824 0.979629L16.428 1.21973L15.7435 0.753655C15.3663 0.499434 14.8355 0.216967 14.5561 0.132227C13.8437 -0.0655006 12.7541 -0.0372539 12.1115 0.18872C10.3653 0.824272 9.26171 2.46258 9.38744 4.25625Z"
+                                                fill="#74788A" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6399 9.80982C16.6399 6.49387 14.8803 4.95057 12.5332 4.95057C10.6395 4.95057 9.79171 5.9984 9.31832 6.73347V5.20436H5.75118C5.79819 6.21736 5.75118 16 5.75118 16H9.31832V9.97082C9.31832 9.64818 9.34147 9.32632 9.43578 9.09531C9.69356 8.45074 10.2805 7.78338 11.2659 7.78338C12.557 7.78338 13.0732 8.77331 13.0732 10.224V15.9997H16.6397L16.6399 9.80982Z"
+                                                fill="#74788A" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.7764 5.20431H0.209685V16H3.7764V5.20431Z" fill="#74788A" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.01253 1.86473C3.98939 0.806221 3.23799 0 2.01784 0C0.797692 0 0 0.806221 0 1.86473C0 2.90131 0.774115 3.73074 1.97154 3.73074H1.99434C3.23799 3.73074 4.01253 2.90131 4.01253 1.86473Z"
+                                                fill="#74788A" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul><!-- ul social-icon -->
+                        </div>
+                        <div class="navigation-plus-social">
+                            <nav class="footer-navigation">
+                                <div class="menu-primary-container">
+                                    <ul id="primary-menu" class="nav-menu">
+                                        <li class="menu-item current-menu-item">
+                                            <a href="#">Founders</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Beneficiaries</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Scholarships</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Press</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav><!-- nav.main-navigation -->
+                            <ul class="social-icon desktop">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.38744 4.25625L9.42934 4.9483L8.73087 4.86356C6.18844 4.53872 3.96731 3.4371 2.08144 1.58693L1.15946 0.668915L0.92198 1.34684C0.419082 2.85804 0.740378 4.45398 1.78808 5.52735C2.34686 6.12054 2.22113 6.20528 1.25725 5.85219C0.92198 5.7392 0.628623 5.65446 0.600684 5.69683C0.502898 5.7957 0.838164 7.08092 1.10358 7.58937C1.46679 8.29553 2.20717 8.98758 3.01739 9.39716L3.70189 9.72199L2.89167 9.73612C2.10938 9.73612 2.08144 9.75024 2.16526 10.0468C2.44464 10.9649 3.54823 11.9394 4.77753 12.3631L5.64364 12.6597L4.88929 13.1116C3.77174 13.7613 2.45861 14.1285 1.14549 14.1567C0.516868 14.1709 0 14.2273 0 14.2697C0 14.411 1.70427 15.2019 2.69609 15.5126C5.67158 16.4306 9.20583 16.0351 11.86 14.4674C13.7459 13.3517 15.6318 11.1343 16.5118 8.98758C16.9868 7.84359 17.4617 5.75333 17.4617 4.75057C17.4617 4.10089 17.5037 4.01615 18.2859 3.23937C18.7469 2.78742 19.18 2.2931 19.2638 2.15187C19.4035 1.88352 19.3895 1.88352 18.6771 2.12362C17.4897 2.54732 17.3221 2.49083 17.9088 1.85528C18.3418 1.40333 18.8587 0.584174 18.8587 0.344077C18.8587 0.301707 18.6491 0.372324 18.4117 0.499434C18.1602 0.640668 17.6014 0.852518 17.1824 0.979629L16.428 1.21973L15.7435 0.753655C15.3663 0.499434 14.8355 0.216967 14.5561 0.132227C13.8437 -0.0655006 12.7541 -0.0372539 12.1115 0.18872C10.3653 0.824272 9.26171 2.46258 9.38744 4.25625Z"
+                                                fill="#74788A" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6399 9.80982C16.6399 6.49387 14.8803 4.95057 12.5332 4.95057C10.6395 4.95057 9.79171 5.9984 9.31832 6.73347V5.20436H5.75118C5.79819 6.21736 5.75118 16 5.75118 16H9.31832V9.97082C9.31832 9.64818 9.34147 9.32632 9.43578 9.09531C9.69356 8.45074 10.2805 7.78338 11.2659 7.78338C12.557 7.78338 13.0732 8.77331 13.0732 10.224V15.9997H16.6397L16.6399 9.80982Z"
+                                                fill="#74788A" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.7764 5.20431H0.209685V16H3.7764V5.20431Z" fill="#74788A" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.01253 1.86473C3.98939 0.806221 3.23799 0 2.01784 0C0.797692 0 0 0.806221 0 1.86473C0 2.90131 0.774115 3.73074 1.97154 3.73074H1.99434C3.23799 3.73074 4.01253 2.90131 4.01253 1.86473Z"
+                                                fill="#74788A" />
+                                        </svg>
+
+
+                                    </a>
+                                </li>
+                            </ul><!-- ul social-icon -->
+                        </div>
+                    </div>
+                    <div class="footer-b">
+                        <nav class="footer-b-navigation">
+                            <div class="menu-footer-menu-container">
+                                <ul id="footer-menu" class="nav-menu">
+                                    <li class="menu-item "><a href="#">Privacy Policy</a></li>
+                                    <li class="menu-item "><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="site-info">
+                            <span class="copyright">© 2021
+                            </span> <span class="author-link"><a href="javascript:void(0);" rel="nofollow"
+                                    target="_blank">Company Name.</a></span>.<span class="wp-link">All rights reserved.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- site-footer-wrapper -->
+        </footer><!-- site-footer -->
+
+    </div> <!-- site -->
+
+    <script src="./js/build/jquery-1.12.0.js"></script>
+    <!-- <script src="./js/build/all.js"></script> -->
+    <!-- <script src="./js/build/owl.carousel.js"></script> -->
+    <script src="./js/build/custom.js"></script>
+</body>
+
+</html>

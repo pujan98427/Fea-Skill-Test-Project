@@ -1,0 +1,16 @@
+.top-header {
+    padding: 20px 20px;
+
+    @include respond-to(xlarge) {
+        padding: 22px 0;
+    }
+
+    .container {
+
+        .top-header-wrapper {
+            .social-icon {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

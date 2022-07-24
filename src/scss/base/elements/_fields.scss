@@ -1,0 +1,87 @@
+/* field
+--------------------------------------------- */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(var(--font-color-rgb), 0.03);
+  background-color: var(--white-color);
+  &:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.747' height='16.42' viewBox='0 0 17.747 16.42'%3E%3Cg id='layer1' transform='translate(0)'%3E%3Cg id='layer1-2' transform='translate(0 0)'%3E%3Cpath id='path4068' d='M-838.971-494.409l5.659,6.568a51.977,51.977,0,0,1,12.088-16.42c-4.247,2.4-8.927,6.946-12.926,12.577Z' transform='translate(838.971 504.261)' fill='%2317be8a'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    -webkit-background-size: 10px 10px;
+            background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: var(--background-color);
+  }
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' focusable='false' class='icon' viewBox='0 0 12 8' role='presentation'%3E%3Cpath stroke='currentColor' stroke-width='2' d='M10 2L6 6 2 2' fill='none' stroke-linecap='square'%3E%3C/path%3E%3C/svg%3E");
+  -webkit-background-size: 12px 8px;
+          background-size: 12px 8px;
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+  padding: 0 20px;
+  width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+select {
+  height: 52px;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  border: 1px solid rgba(var(--font-color-rgb), 0.07);
+  background: rgba(var(--white-color-rgb), 1);
+  border-radius: 0;
+  padding: 14px 19px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: var(--font-color);
+  font-family: var(--primary-font);
+  &::-webkit-input-placeholder {
+    color: #A8A8A8;
+  }
+  &::-moz-placeholder {
+    color: #A8A8A8;
+  }
+  &:-ms-input-placeholder {
+    color: #A8A8A8;
+  }
+  &::placeholder {
+    color: #A8A8A8;
+  }
+}

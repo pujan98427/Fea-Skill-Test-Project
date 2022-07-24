@@ -1,0 +1,35 @@
+.social-icon {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    li {
+        +li {
+            margin-left: 33px;
+        }
+
+        a {
+
+            svg {
+                fill: var(--black-fade-color);
+                transition: all 0.3s ease-in-out;
+
+                path {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: var(--primary-color);
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}

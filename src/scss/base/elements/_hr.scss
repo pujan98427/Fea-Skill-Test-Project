@@ -1,0 +1,15 @@
+.section-devider {
+	hr {
+		margin: 0;
+		height: 0;
+		background: none;
+		border-top: 1px solid rgba(var(--font-color-rgb), .1);
+	}
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}

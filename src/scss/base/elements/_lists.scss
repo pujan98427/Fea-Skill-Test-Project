@@ -1,0 +1,55 @@
+/* Elements
+--------------------------------------------- */
+
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li>ul,
+li>ol {
+
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+.entry-content {
+	.highlight {
+		background-color: rgba(var(--primary-color-rgb), 0.2);
+	}
+
+	li>ul,
+	li>ol {
+		margin-top: 10px;
+	}
+
+	ul>li,
+	ol>li {
+		margin-bottom: 10px;
+	}
+
+	p {
+
+		+ul,
+		+ol {
+			margin-top: -10px;
+		}
+	}
+}

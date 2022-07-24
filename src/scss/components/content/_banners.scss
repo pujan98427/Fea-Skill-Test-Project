@@ -1,0 +1,116 @@
+.site-banner {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(100% - 30%);
+        left: 0;
+        background: var(--background-color);
+        width: 100%;
+        height: 30%;
+
+        @include respond-to(medium) {
+            top: calc(100% - 200px);
+            height: 200px;
+        }
+
+        @include respond-to(large) {
+            top: calc(100% - 279px);
+            height: 279px;
+        }
+    }
+
+    .container {
+        margin-right: 0;
+        padding-top: 40px;
+        margin: 0 0 0 16px;
+        background-color: var(--white-color);
+
+        @include respond-to(xlarge) {
+            margin: 0 0 0 auto;
+        }
+
+        @media(min-width: 1300px) {
+            max-width: 1300px;
+        }
+
+        @include respond-to(xxlarge) {
+            max-width: 1380px;
+            width: 100%;
+        }
+
+
+
+
+    }
+
+    // enty-meta
+
+    .banner-title {
+        font-size: 1.77em;
+        line-height: 1.15;
+        font-weight: 500;
+        margin: 0;
+        font-family: var(--secondary-font);
+
+        @include respond-to(large) {
+            font-size: 2.5em;
+        }
+
+        @include respond-to(xlarge) {
+            font-size: 3.5em;
+        }
+
+        a {
+            color: var(--primary-color);
+
+            &:hover {
+                color: var(--font-color)
+            }
+        }
+    }
+
+    .banner-wrapper {
+        position: relative;
+
+
+        .banner-caption-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 40px;
+
+            @include respond-to(medium) {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+
+            @include respond-to(xlarge) {
+                padding: 0 105px 80px 45px;
+            }
+        }
+
+        .feature-image {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: -15px;
+
+            @include respond-to(xlarge) {
+                padding-left: 45px;
+            }
+        }
+
+        .banner-caption {
+            .banner-button {
+                margin-top: 20px;
+
+                @include respond-to(medium) {
+                    margin-left: 101px;
+                }
+            }
+        }
+    }
+
+}

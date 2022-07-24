@@ -1,0 +1,46 @@
+@use "sass:math";
+// mixin to manage responsive breakpoints
+
+$brekpoints: (
+    'small': 576px,
+    'medium': 768px,
+    'large': 992px,
+    'mlarge': 1024px,
+    'xlarge': 1200px,
+    'xxlarge': 1400px,
+    ) !default;
+
+@mixin respond-to($brekpoint) {
+    @if map-has-key($brekpoints, $brekpoint) {
+        @media screen and (min-width: map-get($brekpoints, $brekpoint)) {
+            @content;
+        }
+    }
+}
+
+
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+// automargin
+
+@mixin push--auto {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//blockcenter
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
